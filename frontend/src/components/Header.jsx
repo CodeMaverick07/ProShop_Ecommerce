@@ -3,11 +3,11 @@ import logo from "../assets/logo.png";
 import { useState } from "react";
 
 const Header = () => {
-  const [showMenu, setShowMenu] = useState("hidden");
+  const [showMenu, setShowMenu] = useState("md:hidden");
   const showMenuHandler = () => {
-    if (showMenu === "hidden") {
+    if (showMenu === "md:hidden") {
       setShowMenu("");
-    } else setShowMenu("hidden");
+    } else setShowMenu("md:hidden");
   };
   return (
     <div>
@@ -33,7 +33,9 @@ const Header = () => {
           </div>
         </div>
       </header>
-      <div className={`mt-14 w-full bg-gray-500 text-lg h-20 ${showMenu} `}>
+      <div
+        className={`mt-14 w-full bg-gray-500 text-lg h-20 lg:hidden xl:hidden 2xl:hidden md:flex md:flex-col ${showMenu} `}
+      >
         <div className="flex mt-3 mx-5">
           <FaShoppingCart className="m-1" />
           <p>Cart</p>
