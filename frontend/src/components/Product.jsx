@@ -12,12 +12,16 @@ const Product = ({ product }) => {
 
         <div className="pl-4 ">
           <Link to={`/product/${product._id}`}>
-            <h3 className="text-lg font-mono">{product.name}</h3>
+            <h3 className="text-lg text-gray-500 font-mono underline hover:text-black">
+              {product.name.slice(0, 24)}..
+            </h3>
           </Link>
           <div className="flex text-xs">
             <Rating rating={product.rating} noReview={product.numReviews} />
           </div>
-          <h1 className="text-xl font-bold font-mono">{product.price}</h1>
+          <h1 className="text-xl text-gray-700 font-bold font-mono">
+            {product.price}rs
+          </h1>
         </div>
       </div>
     </div>

@@ -49,7 +49,7 @@ const Rating = ({ rating, noReview }) => {
           <FaRegStar />
         )}
       </span>
-      <span className="px-1 text-black font-mont">
+      <span className="px-1 text-gray-700 font-mont">
         {noReview && noReview} reviews
       </span>
     </div>
