@@ -12,7 +12,7 @@ const Header = () => {
   };
   return (
     <div>
-      <header className="h-16 flex justify-between fixed top-0 left-0 right-0 z-50 bg-gray-700 px-12 md:px-0 w-full ">
+      <header className="h-16 flex justify-between fixed top-0 left-0 right-0 z-50 bg-gray-500 px-12 md:px-0 w-full ">
         <Link to="/">
           <div className="flex items-center px-6 md:px-0">
             <img className="h-10 my-2 ml-4" src={logo} alt="" />
@@ -41,7 +41,7 @@ const Header = () => {
         </div>
       </header>
       <div
-        className={`mt-14 w-full bg-gray-700 text-lg h-20 lg:hidden xl:hidden 2xl:hidden md:flex md:flex-col ${showMenu} `}
+        className={`fixed w-full bg-gray-500 text-lg lg:hidden xl:hidden 2xl:hidden md:flex md:flex-col ${showMenu} `}
       >
         <Link to="/cart">
           <div className="flex mt-3 mx-5">
