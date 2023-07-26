@@ -25,7 +25,7 @@ const ProductScreen = () => {
                 className="h-72 w-80 md:h-72 md:w-72"
               />
             </div>
-            <div className="md:flex md:my-4 md:-ml-10 ">
+            <div className="md:flex md:my-4 md:-ml-10 text-gray-700 ">
               <div>
                 <div className="text-4xl mb-2">
                   <span>{product.name}</span>
@@ -39,7 +39,7 @@ const ProductScreen = () => {
               </div>
               <hr className="border my-3 " />
               <div className="w-48 md:hidden">
-                <p className="font-bold mb-3 ">Description:</p>
+                <p className="font-bold mb-1 ">Description:</p>
                 <p>{product.description}</p>
               </div>
             </div>
